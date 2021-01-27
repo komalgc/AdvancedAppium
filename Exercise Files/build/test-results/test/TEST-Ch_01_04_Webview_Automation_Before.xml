@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ch_01_04_Webview_Automation_Before" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-27T03:27:35" hostname="Rahuls-MacBook-Air.local" time="134.063">
+  <properties/>
+  <testcase name="testHybridApp" classname="Ch_01_04_Webview_Automation_Before" time="134.063"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jan 27, 2021 8:58:04 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
