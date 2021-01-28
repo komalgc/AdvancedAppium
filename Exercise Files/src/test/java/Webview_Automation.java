@@ -17,8 +17,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Webview_Automation {
-    private static final String APP_ANDROID = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.apk";
-    private static final String APP_IOS = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.app.zip";
+    private static final String APP_ANDROID = "/Users/rahullokurte/Desktop/TheApp-v1.9.0.apk";
+
     private static final String APPIUM = "http://localhost:4723/wd/hub";
 
     private AppiumDriver driver;
@@ -35,19 +35,11 @@ public class Webview_Automation {
 
     }
 
-    private void setUpIOS() throws Exception {
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("platformName", "iOS");
-        caps.setCapability("platformVersion", "12.0");
-        caps.setCapability("deviceName", "iPhone X");
-        caps.setCapability("app", APP_IOS);
-        driver = new IOSDriver(new URL(APPIUM), caps);
-    }
 
     @Before
     public void setUp() throws Exception {
         setUpAndroid();
-//        setUpIOS();
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
